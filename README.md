@@ -4,3 +4,19 @@ This project is completed as part of the curriculum for the Udacity Data Scienti
 
 # Libraries used
 
+# Files used
+
+# ETL Pipeline / Data cleaning
+
+# Machine Learning Pipeline
+
+# Acknowledgements
+
+# Contribution
+
+# Licensing
+
+
+
+
+
