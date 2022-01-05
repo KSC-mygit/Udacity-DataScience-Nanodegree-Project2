@@ -35,12 +35,12 @@ This project is completed as part of the curriculum for the Udacity Data Scienti
 
 ## ETL Pipeline
 This pipeline is contained in the ```process_data.py``` file. The data was extracted from csv files that were already preprocessed by Figure Eight Inc. and made available by Udacity. Although the files had undergone some cleaning and formatting beforehand, a few steps still needed to be performed to get the data ready for machine learning modelling. 
- ### categories.csv
+ #### *categories.csv*
  The relevant data in this file was a single column containing all the 36 labelled with a binary indicator for whether category was applicable or not to the message. The data was in a single string that required splitting, generation of an appropriate column header and extraction of the 0 or 1 character that indicated if the category was relevant or not. Through some exploratory data analysis is was noted that the file contained some duplicate rows which were dealt with in a later stage of the ETL process.
- ### messages.csv
+ #### *messages.csv*
  This file also contained duplicated rows and a column 'original' which contained a significant number of missing values. As this columns was not expected to be used for feature extraction it was determined to not bother with imputation or dropping missing rows.
  
- ### merging datasets and storing
+ #### *merging datasets and storing*
  The two files were merged after conducting the steps outlined above. This was a simple merge using a common 'id' field. After merging the duplicate rows were drops and the final merged dataset was stored in a sqlite database for use in the maching learning pipeline which follows next.
 
 
