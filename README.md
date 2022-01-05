@@ -3,6 +3,7 @@
 This project is completed as part of the curriculum for the Udacity Data Scientist Nanodegree Program. In this project I create an ETL and Machine Learning pipeline and generate my results via a Web app. The application is a classifier for messages received in a possible disaster scenario to enable emergency responders to act on messages received as quickly and effectively as possible under resource contrainted situations.
 
 ## Libraries used
+ * sys
  * re
  * numpy
  * pandas
@@ -10,6 +11,7 @@ This project is completed as part of the curriculum for the Udacity Data Scienti
  * nltk
  * sklearn
  * sqlalchemy
+ * xgboost
 
 ## Getting Started
 1. Run the following commands in the project's root directory to set up the database and model.
@@ -41,16 +43,16 @@ This pipeline is contained in the ```process_data.py``` file. The data was extra
 
 
 ## Machine Learning Pipeline
-This pipeline is contained in the ```train_classifier.py``` file. This pipeline will load data from the sqlite database generated in the ETL pipeline outline above and follows the standard modelling process of splitting the dataset into training and test sets, initializing the model by preprocessing the text inputs using normalization, lemming and removal of stop words, creating a pipeline and fitting the model using GridSearch. This pipeline also generates results from the test data sets and outputs the final model as a pickle file called ```classifier.pkl```.
+This pipeline is contained in the ```train_classifier.py``` file. This pipeline will load data from the sqlite database generated in the ETL pipeline outline above and follows the standard modelling process of splitting the dataset into training and test sets, initializing the model by preprocessing the text inputs using normalization, lemming, stemming and removal of stop words, creating a pipeline and fitting the model using GridSearch. This pipeline also generates results from the test data sets and outputs the final model as a pickle file called ```classifier.pkl```.
 
 ## Flask Web App
-The project has an accompanying Flash Web App to generate prediction based on include from a user of the app. For instructions on the steps to initialize the full package and its accompanying script and and launch the web app read the accompanying 'README - launch app' file. The app can be initialized by running the ```run.py file```. The web app uses the model generated in the ML pipeline above by loading the pickle file classifier.pkl and rendering a site that will display the model's predictions on which categories would be deemed relevant for a given message input. 
+The project has an accompanying Flash Web App to generate prediction based on include from a user of the app. For instructions on the steps to initialize the full package and its accompanying script and and launch the web app refer to the 'Getting Started' section and above or read the accompanying 'README - launch app' file. The app can be initialized by running the ```run.py file```. The web app uses the model generated in the ML pipeline above by loading the pickle file classifier.pkl and rendering a site that will display the model's predictions on which categories would be deemed relevant for a given message input. 
 
 ## Acknowledgements
-Special thanks to Figure Eight Inc. and Udacity for provided the labelled datasets described in the "Files Used" section above which truncated the cleaning and preparation significantly.
+Special thanks to Figure Eight Inc. and Udacity for providing the labelled datasets described in the "Files Used" section above which truncated the cleaning and preparation efforted significantly.
 
 ## Contribution
-The project will first be submitted for grading as part of a core data science nanodegree on Udacity. After this project has been graded and I have met the course requirements I will update this section to welcome any contributions. Until that time please reserve any contributions but they will definitely be welcome afterwards.
+The project will first be submitted for grading as part of a core data science nanodegree on Udacity. After this project has been graded and I have met the course requirements I will update this section to welcome any contributions. Until that time, please kindly reserve any contributions - but they will definitely be welcome afterwards.
 
 
 
