@@ -33,7 +33,7 @@ The data was extracted from csv files that were already preprocessed by Figure E
 Special thanks to Figure Eight Inc. and Udacity for provided the labelled datasets described in the "Files Used" section above which truncated the cleaning and preparation significantly.
 
 ## Contribution
-The project will first be submitted for grading as part of a core data science nanodegree on Udacity. After this project has been graded and I have met the course requirements are I will update this section to welcome any contributions. Until that time please reserve any contributions but they will definitely be welcome afterwards.
+The project will first be submitted for grading as part of a core data science nanodegree on Udacity. After this project has been graded and I have met the course requirements I will update this section to welcome any contributions. Until that time please reserve any contributions but they will definitely be welcome afterwards.
 
 
 
