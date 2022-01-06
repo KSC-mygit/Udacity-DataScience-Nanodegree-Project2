@@ -43,13 +43,12 @@ def tokenize(text):
     tokens = [t for t in tokens if t not in stopwords.words("english")]
     
     lemmatizer = WordNetLemmatizer()
-    stemmer = PorterStemmer()
-        
+    
+      
     clean_tokens = []
     for tok in tokens:
         lemmed_tok = lemmatizer.lemmatize(tok).lower().strip()
-        stemmed_tok = stemmer.stem(lemmed_tok)
-        cleaned_tok = stemmed_tok
+        cleaned_tok = lemmed_tok
         
         clean_tokens.append(cleaned_tok)
 

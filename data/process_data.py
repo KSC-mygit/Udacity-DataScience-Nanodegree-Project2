@@ -48,6 +48,7 @@ def clean_data(df):
     df.drop('categories', axis=1, inplace=True)
     df = pd.concat([df, categories], axis=1)
     df = df.drop_duplicates()
+    df.related = df.related.replace({2: 0})
     return df
 
 
@@ -64,7 +65,7 @@ def save_data(df, database_filename):
     
     engine = create_engine('sqlite:///{}'.format(database_filename))
     df.to_sql('Messages', engine, index=False, if_exists='replace')
-
+    
 
 def main():
     
