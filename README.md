@@ -26,7 +26,7 @@ This project is completed as part of the curriculum for the Udacity Data Scienti
 2. Run the following command in the app's directory to run the web app.
     `python run.py`
 
-3. Go to http://view6914b2f4-3001.udacity-student-workspaces.com
+3. Go to <a href='http://view6914b2f4-3001.udacity-student-workspaces.com' target=_blank>Web app</a>
 
 
 ## Files used
