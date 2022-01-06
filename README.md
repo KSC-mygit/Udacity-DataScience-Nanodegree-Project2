@@ -41,7 +41,7 @@ This pipeline is contained in the ```process_data.py``` file. The data was extra
  This file also contained duplicated rows that were also handled later in the process. The file contained a column called ```original``` which contained a significant number of missing values as it seemed to mostly apply to messages that were not originally sent in english and had to be translated. As this columns was not expected to be used for feature extraction it was determined to not bother with imputation or dropping missing rows.
  
  #### *merging datasets and storing*
- The two files were merged after conducting the steps outlined above. This was a simple merge using a common 'id' field. After merging the duplicate rows were drops and the final merged dataset was stored in a sqlite database named ```DisasterResponse.db```for use in the maching learning pipeline which follows next.
+ The two files were merged after conducting the steps outlined above. This was a simple merge using a common ```id``` field. After merging the duplicate rows were drops and the final merged dataset was stored in a sqlite database named ```DisasterResponse.db```for use in the maching learning pipeline which follows next.
 
 
 ## Machine Learning Pipeline
