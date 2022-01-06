@@ -13,7 +13,7 @@ This project is completed as part of the curriculum for the Udacity Data Scienti
  * sqlalchemy
  * xgboost
  
- Run ```! pip install --upgrade pip``` before running ```! pip install xgboost``` if xgboost is not installed in your environment. The same can be applied for any of the above packages that may not be installed 
+ Run ```! pip install --upgrade pip``` before running ```! pip install xgboost``` if ```xgboost``` is not installed in your environment. The same can be applied for any of the above packages that may not be installed 
 
 ## Getting Started
 1. Run the following commands in the project's root directory to set up the database and model.
