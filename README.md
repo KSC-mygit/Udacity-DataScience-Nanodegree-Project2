@@ -1,6 +1,6 @@
 # Udacity Data Scientist Nanodegree - Project 2
 
-This project is completed as part of the curriculum for the Udacity Data Scientist Nanodegree Program. In this project I create an ETL and Machine Learning pipeline and generate my results via a Web app. The application is a classifier for messages received in a possible disaster scenario to enable emergency responders to act on messages received as quickly and effectively as possible under resource contrainted situations.
+This project is completed as part of the curriculum for the Udacity Data Scientist Nanodegree Program. In this project I create an Extract-Transfer-Load (ETL) and Machine Learning (ML) pipeline and generate my results via a Web app. The application is a classifier for messages received in a possible disaster scenario to enable emergency responders to sort through messages received and respond as efficiently and effectively as possible under resource-contrainted situations.
 
 ## Libraries used
  * sys
