@@ -31,7 +31,7 @@ This project is completed as part of the curriculum for the Udacity Data Scienti
 
 ## Files used
  * ```disaster_messages.csv``` - file containing full text of message sent in a possible disaster scenario. The message will form the X variable (input/independent/predictor variable)
- * ```disaster_categories``` - file containing the assigned categories for each of the messages in the messages.csv file. The categories file includes labels for how a message was tagged against one of 36 categories that may be relevant in  an emergy scenario e.g. 'fire', 'earthquake', 'storm', 'shelter', 'search and rescue' etc.
+ * ```disaster_categories``` - file containing the assigned categories for each of the messages in the messages.csv file. The categories file includes labels for how a message was tagged against one of 36 categories that may be relevant in  an emergy scenario e.g. 'fire', 'earthquake', 'storm', 'shelter', 'search and rescue' etc. The 36 categories will represent the output variable hence this model will be a multi-output classification model.
 
 ## ETL Pipeline
 This pipeline is contained in the ```process_data.py``` file. The data was extracted from csv files that were already preprocessed by Figure Eight Inc. and made available by Udacity. Although the files had undergone some cleaning and formatting beforehand, a few steps still needed to be performed to get the data ready for machine learning modelling. 
