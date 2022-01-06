@@ -50,13 +50,13 @@ This pipeline is contained in the ```train_classifier.py``` file. This pipeline 
 I used <a href='https://scikit-learn.org/stable/modules/generated/sklearn.multioutput.MultiOutputClassifier.html' target="_blank">sklearn.multioutput.MultiOutputClassifier</a> to train and fit the model and used <a href='https://xgboost.readthedocs.io/en/stable/python/python_intro.html' target="_blank">xgboost</a> as the estimator for the classifier. I considered ```KNeighborsClassifier``` and ```RandomForestClassifier``` as alternative options for the classifier's estimator parameter but ultimately settled on ```xgboost``` based on the accuracy and efficiency of this estimator relative to the other 2 alternatives that I experimented with.
 
 ## Flask Web App
-The project has an accompanying Flash Web App to generate prediction based on input from a user of the app in the form of a message. For instructions on the steps to initialize the full package and its accompanying script and to launch the web app refer to the 'Getting Started' section above or read the accompanying 'README - launch app' file included in this repository. The app can be initialized by running the ```run.py file```. The web app uses the model generated in the ML pipeline above by loading the pickle file ```classifier.pkl``` and rendering a site that will display the model's predictions on which categories would be deemed relevant for a given message input. 
+The project has an accompanying Flash Web App to generate a prediction based on a message input from a user. For instructions on the steps to initialize the full package and its accompanying script and to launch the web app refer to the 'Getting Started' section above or read the accompanying 'README - launch app' file included in this repository. The app can be initialized by running the ```run.py file```. The web app uses the model generated in the ML pipeline above by loading the pickle file ```classifier.pkl``` and rendering a site that will display the model's predictions on which categories would be deemed relevant for a given message input. 
 
 ## Acknowledgements
-Special thanks to Figure Eight Inc. and Udacity for providing the labelled datasets described in the "Files Used" section above which truncated the cleaning and preparation efforted significantly.
+Special thanks to Figure Eight Inc. and Udacity for providing the labelled datasets described in the "Files Used" section above which truncated the cleaning and preparation effort significantly.
 
 ## Contribution
-The project will first be submitted for grading as part of a core data science nanodegree on Udacity. After this project has been graded and I have met the course requirements I will update this section to welcome any contributions. Until that time, please kindly reserve any contributions - but they will definitely be welcome afterwards.
+The project will first be submitted for grading as part of a core data science nanodegree on Udacity. After this project has been graded and I have met the course requirements I will update this section to welcome any contributions. Until that time, please kindly reserve any contributions - but they will definitely be welcome afterwards. Thank you for your interest!
 
 
 
